@@ -1,12 +1,10 @@
-import "./index.css";
-
-const Homepage = () => {
+const DetailsPage = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <h1>Details</h1>
     </div>
   );
 };
 
 // or if you are using the components/index.js exports
-export { Homepage };
+export { DetailsPage };
