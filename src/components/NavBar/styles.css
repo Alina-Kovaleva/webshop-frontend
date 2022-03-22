@@ -1,5 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;400&display=swap");
+
 .navbar-container {
   background-color: #8568ff;
   width: 100%;
-  min-height: 100px;
+  height: 146px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.left {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 50%;
+  max-width: 60%;
+  flex-grow: 1;
+  /* background-color: greenyellow; */
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0d0e43;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  text-decoration: none;
+  align-items: center;
+}
+
+.nav-logo {
+  margin-right: 65px;
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 47px;
+}
+
+.right-logo {
+  color: #ffffff;
+}
+
+.nav-link {
+  margin-right: 35px;
+  text-decoration: none;
+}
+
+.nav-search {
+  height: 40px;
+  width: 317px;
+  background: #ffffff;
+  border: 2px solid #e7e6ef;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-image: url("./icons/uil_search.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.right {
+  /* background-color: red; */
+  min-width: 15%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+.icon:last-child {
+  margin-right: 0;
+}
+.login {
+  background-image: url("./icons/User.svg");
+  width: 16px;
+  height: 16px;
+}
+
+.cart {
+  background-image: url("./icons/fluent_cart-24-regular.svg");
+}
+
+.favorite {
+  background-image: url("./icons/uil_heart-alt.svg");
 }
