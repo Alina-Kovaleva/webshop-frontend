@@ -1,0 +1,44 @@
+.shop-container {
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+}
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  min-width: 40%;
+  min-height: 300px;
+}
+.categories{
+  background-color: red;
+  min-height: 40%;
+  min-width: 40%;
+}
+.ratings-items{
+  background-color: salmon;
+min-height: 30%;
+min-width: 40%;
+}
+.price-filter{
+  background-color: seagreen;
+min-height: 30%;
+min-width: 40%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+  min-width: 60%;
+  min-height: 300px;
+}
+/* display product stylings */
+
+.rightbar{
+  display:flex ;
+  flex-direction: column;
+  min-width: 60%;
+  min-height: 300px;
+
+}

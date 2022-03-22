@@ -12,7 +12,7 @@ function App() {
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/details/:id" element={<DetailsPage />} />
       </Routes>
-      <h1>HEllo doing some setup</h1>
+      
     </div>
   );
 }
