@@ -65,7 +65,11 @@ const DetailsPage = () => {
                 {/* <div className="img-prevue">
             added 3 prevue picture
           </div> */}
-                <img className="main-image" src={product.mainImage}></img>
+                <img
+                  className="main-image"
+                  src={product.mainImage}
+                  alt={product.title}
+                ></img>
               </div>
               <div className="product-content">
                 <div className="product-header">
