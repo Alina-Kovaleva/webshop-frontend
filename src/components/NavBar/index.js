@@ -19,7 +19,7 @@ function NavBar() {
             Home
           </NavLink>
           <NavLink
-            to="/shop"
+            to="/products"
             className="nav-link"
             style={({ isActive }) =>
               isActive ? { color: "white" } : undefined
@@ -28,7 +28,7 @@ function NavBar() {
             Products
           </NavLink>
           <NavLink
-            to="/"
+            to="/blog"
             className="nav-link"
             style={({ isActive }) =>
               isActive ? { color: "white" } : undefined
@@ -46,7 +46,7 @@ function NavBar() {
             Shop
           </NavLink>
           <NavLink
-            to="/details/1"
+            to="/contacts"
             className="nav-link"
             style={({ isActive }) =>
               isActive ? { color: "white" } : undefined

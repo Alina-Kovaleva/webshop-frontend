@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;400&display=swap");
+
+.flex {
+  display: flex;
+}
+.details-page-container {
+  flex-direction: column;
+}
+
+.content,
+.bottom-content {
+  padding-top: 70px;
+  max-width: 1142px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-content {
+  padding-top: 89px;
+}
+
+.det-page-nav {
+  margin-bottom: 86px;
+}
+
+.product-img {
+  margin-right: 46px;
+}
+
+.main-image {
+  background-color: white;
+  object-fit: contain;
+  width: 375px;
+  height: 487px;
+}
+
+.det-page-nav {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.current-product {
+  color: #fb2e86;
+}
+
+.product-discription {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 29px;
+  color: #a9acc6;
+}
+
+.product-title {
+  color: #0d134e;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  margin-bottom: 9px;
+  text-align: left;
+}
+.rating-container {
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-review {
+  width: 93px;
+  height: 24px;
+
+  border: 1px solid #1d3178;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: white;
+  /* Text */
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  /* identical to box height, or 207% */
+
+  text-transform: capitalize;
+  color: #151875;
+  padding-bottom: 3px;
+}
+
+.price {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #151875;
+}
+.add-to-cart {
+  margin-right: 12px;
+  width: 153px;
+  height: 32px;
+  border: 1px solid #ff3eb2;
+  background: #ff3eb2;
+  border-radius: 8px;
+  background-image: url("./icons/fluent_cart-24-regular.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 40% left 10%;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  /* identical to box height, or 181% */
+
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-left: 3%;
+}
+
+.text-darc-blue {
+  color: #151875;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 29px;
+  margin-right: 19px;
+}
+
+.favorite-btn {
+  width: 117px;
+  height: 32px;
+  border: 1px solid #1d3178;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: white;
+  background-image: url("./icons/heart-blue.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 40% left 10%;
+  /* text */
+  color: #151875;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  text-transform: capitalize;
+  text-align: end;
+  padding-right: 2%;
+}
+
+.social-links {
+  width: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.round-icons {
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+}
+
+.facebook-round {
+  background-image: url("./icons/facebook-round.svg");
+}
+.insta-round {
+  background-image: url("./icons/insta-round.svg");
+}
+.twitter-round {
+  background-image: url("./icons/twitter-round.svg");
+}
+
+.bottom {
+  margin-top: 203px;
+  background-color: #f9f8fe;
+  min-height: 721px;
+  color: #a9acc6;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.bottom-content-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+
+  /* Text */
+
+  color: #151875;
+}
+
+.product-nav {
+  width: 50%;
+  display: flex;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  /* Text */
+
+  color: #151875;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.product-nav-link {
+  text-decoration: none;
+}
+
+.active,
+.product-nav-link:active {
+  text-decoration: underline;
+  color: #151875;
+}
