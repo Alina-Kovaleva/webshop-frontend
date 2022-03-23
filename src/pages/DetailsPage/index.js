@@ -6,8 +6,7 @@ import axios from "axios";
 
 import { Link } from "react-router-dom";
 
-import { Footer } from "../../components";
-// import { Hero } from "./components";
+import { Footer, Hero } from "../../components";
 import "./styles.css";
 
 const DetailsPage = () => {
@@ -48,7 +47,7 @@ const DetailsPage = () => {
 
   return (
     <div className="details-page">
-      {/* <Hero /> */}
+      <Hero />
       <div className="details-page-container flex">
         {!product ? (
           "Loading"
