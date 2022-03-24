@@ -1,5 +1,12 @@
 import "./styles.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHeart,
+  faSearchPlus,
+  faShoppingCart,
+} from "@fortawesome/free-solid-svg-icons";
+
 export default function DisplayProducts(props) {
   return (
     <div className="product-container-row">
@@ -7,18 +14,29 @@ export default function DisplayProducts(props) {
         <img className="image" alt={props.categoryId} src={props.mainImage} />
       </div>
 
-      <div className="product-details-column">
+      <div className="product-content">
         <div className="product-title">{props.title}</div>
-        <div className="price-rating-row">
-          <div>{props.price}</div>
-          <div>{props.rating}</div>
+
+        <div className="price-rating">
+          <div className="price">{props.price}$</div>
+          <div className="ratings">{props.rating}</div>
         </div>
-        <div className="description">
+
+        <div className="product-description">
           <p>{props.description}</p>
         </div>
-        <div className="product-iconbar-row">iconbar</div>
 
-        {/* <li>{props.categoryId}</li> */}
+        <div className="iconbar">
+          <div className="cart icon">
+            <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
+          </div>
+          <div className="favorite icon">
+            <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
+          </div>
+          <div className="zoom icon">
+            <FontAwesomeIcon icon={faSearchPlus}></FontAwesomeIcon>
+          </div>
+        </div>
       </div>
     </div>
   );
