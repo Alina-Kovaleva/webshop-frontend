@@ -55,7 +55,13 @@ const DetailsPage = () => {
           <div className="content">
             <div className="det-page-nav flex">
               <p>
-                Home.Shop.
+                <Link className="link-dec-none" to="/">
+                  Home.
+                </Link>
+
+                <Link className="link-dec-none" to="/shop">
+                  Shop.
+                </Link>
                 <span className="current-product">{product.title}</span>
               </p>
             </div>

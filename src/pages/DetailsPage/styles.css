@@ -258,3 +258,11 @@
   text-decoration: underline;
   color: #151875;
 }
+
+.link-dec-none {
+  text-decoration: none;
+}
+
+.link-dec-none:hover {
+  text-decoration: underline;
+}
