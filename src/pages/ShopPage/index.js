@@ -304,6 +304,7 @@ const ShopPage = () => {
                 index <= offset + 4 && (
                   <DisplayProducts
                     key={index}
+                    id={product.id}
                     title={product.title}
                     price={product.price}
                     description={product.description}

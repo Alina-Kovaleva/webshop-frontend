@@ -131,9 +131,15 @@
 
 .buttons {
   justify-content: space-around;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .btn {
   background: #ff3eb2;
   border-radius: 8px;
+}
+
+.nav-link-to-details-prosuct {
+  text-decoration: none;
 }
