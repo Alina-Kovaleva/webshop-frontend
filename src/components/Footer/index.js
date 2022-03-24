@@ -34,12 +34,13 @@ function Footer() {
         </div>
         <div className="contacts-social-link">
           <h3 className="footer-title">Follow us</h3>
-          <div className="social-links">
-            <div className="social-links-item facebook"></div>
-            <div className="social-links-item instagram"></div>
-            <div className="social-links-item twitter"></div>
-            {/* ^ should be replaced with links in the future */}
-          </div>
+          <div className="links-img"></div>
+          {/* <div className="social-links">
+            <div className="social-links-item facebook-footer"></div>
+            <div className="social-links-item instagram-footer"></div>
+            <div className="social-links-item twitter-footer"></div>
+            ^ should be replaced with links in the future
+          </div> */}
         </div>
       </div>
     </div>

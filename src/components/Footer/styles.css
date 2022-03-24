@@ -9,6 +9,7 @@
   /* min-height: 300px; */
   justify-content: center;
   padding-top: 95px;
+  padding-bottom: 3%;
   text-align: left;
   /* position: absolute; */
   /* bottom: 0; */
@@ -60,15 +61,18 @@ li {
   margin-right: 90px;
 }
 
-.social-links {
+.social-links,
+.links-img {
   display: flex;
   flex-direction: row;
   min-height: 24.33px;
   width: 100.31px;
   /* background-color: aqua; */
+  background-image: url("./icon/Group\ 245.svg");
+  background-repeat: no-repeat;
 }
 
-.social-links-item {
+/* .social-links-item {
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
@@ -78,14 +82,14 @@ li {
   margin-right: 0;
 }
 
-.facebook {
+.facebook-footer {
   background-image: url("./icon/Facebook.svg");
 }
 
-.instagram {
+.instagram-footer {
   background-image: url("./icon/Instagram.svg");
 }
 
-.twitter {
+.twitter-footer {
   background-image: url("./icon/Twitter.svg");
-}
+} */

@@ -5,7 +5,7 @@ function Hero() {
     <div className="hero-container">
       <div className="hero-content">
         <div className="motto">
-          Products for every need, at the distance of a click.
+          <p>Products for every need, at the distance of a click.</p>
         </div>
         <div className="hero-img-container">
           <div className="hero-img"></div>

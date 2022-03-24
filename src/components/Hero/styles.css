@@ -4,16 +4,16 @@
   background-color: #8568ff;
   color: #ffffff;
   display: flex;
+  align-items: flex-end;
   width: 100%;
   height: 527px;
-  justify-content: center;
-  padding-left: 374px;
 }
 
 .hero-content {
   display: flex;
-  width: 80%;
-  margin-right: 40%;
+  width: 100%;
+  justify-content: space-around;
+  height: 100%;
 }
 
 .motto {
@@ -24,13 +24,19 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 50px;
-  height: 100%;
   width: 50%;
+  max-width: 465px;
+}
+
+.hero-img-container {
+  display: flex;
+  align-items: flex-end;
 }
 
 .hero-img {
   background-image: url("./img/Fan.svg");
   background-repeat: no-repeat;
-  width: 594.79px;
-  height: 648.04px;
+  /* width: 594.79px; */
+  width: 600px;
+  height: 420px;
 }
