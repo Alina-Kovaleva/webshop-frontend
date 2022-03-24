@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;400&display=swap");
+
+.shop-page-column,
+.side-bar-container-column,
+.cat-container-column,
+.side-bar-content-column,
+.rating-container-column,
+.price-container-column,
+.content-container-column,
+.product-detail-column,
+.product-detail-head-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-container-flex,
+.side-bar-content-item,
+.buttons,
+.product-container-row,
+.product-detail-price-rating-row,
+.product-detail-icon-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.shop-page-column {
+  width: 100%;
+  justify-content: center;
+  padding-left: 20.05%;
+  padding-top: 5%;
+}
+.product-detail-image {
+  margin-right: 29px;
+}
+.image {
+  width: 284px;
+  height: 197px;
+  object-fit: contain;
+}
+.product-detail-column {
+  padding-top: 2%;
+}
+.product-container-row {
+  max-width: 921px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px 5px rgba(248, 246, 253, 0.75);
+  border-radius: 8px;
+  padding-top: 16px;
+  padding-left: 18px;
+  padding-bottom: 17px;
+}
+
+.product-detail-title {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #111c85;
+}
+
+.product-detail-description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  color: #9295aa;
+}
+
+.side-bar-container-column {
+  margin-right: 2%;
+  gap: 5%;
+}
+
+.side-bar-title {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+  /* Text */
+
+  color: #151875;
+}
+
+.side-bar-content-item {
+  align-items: center;
+}
+
+.side-bar-checkbox-text,
+.price-range {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+
+  color: #7e81a2;
+}
+.price-range {
+  font-size: 15px;
+}
+
+.product-price {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #111c85;
+}
+
+.product-detail-price-rating-row {
+  gap: 5%;
+}
+
+.product-detail-icon-row {
+  width: 131px;
+  justify-content: space-between;
+}
+
+.buttons {
+  justify-content: space-around;
+}
+
+.btn {
+  background: #ff3eb2;
+  border-radius: 8px;
+}
