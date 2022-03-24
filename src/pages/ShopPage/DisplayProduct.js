@@ -33,13 +33,13 @@ export default function DisplayProducts(props) {
           <p>{props.description}</p>
         </div>
         <div className="product-detail-icon-row">
-          <div className="add-to-cart">
+          <div className="add-to-cart-i">
             <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
           </div>
-          <div className="add-to-favorite">
+          <div className="add-to-favorite-i">
             <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
           </div>
-          <div className="add-to-zoom">
+          <div className="add-to-zoom-i">
             <FontAwesomeIcon icon={faSearchPlus}></FontAwesomeIcon>
           </div>
         </div>
