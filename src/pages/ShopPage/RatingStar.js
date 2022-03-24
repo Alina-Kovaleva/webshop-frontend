@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { FaStar } from "react-icon-rating";
+import "./styles.css";
 
 
 

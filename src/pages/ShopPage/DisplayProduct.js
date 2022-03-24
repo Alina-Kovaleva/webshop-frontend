@@ -1,6 +1,6 @@
 import "./styles.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ReactStars from "react-rating-stars-component";
 import {
   faHeart,
   faSearchPlus,
@@ -8,32 +8,38 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function DisplayProducts(props) {
+  const rating = {
+    size: 12,
+    value: props.rating,
+    isHalf: true,
+    edit: false,
+  };
   return (
     <div className="product-container-row">
-      <div className="product-image">
-        <img className="image" alt={props.categoryId} src={props.mainImage} />
+      <div className="product-detail-image">
+        <img className="image" alt={props.title} src={props.mainImage} />
       </div>
-
-      <div className="product-content">
-        <div className="product-title">{props.title}</div>
-
-        <div className="price-rating">
-          <div className="price">{props.price}$</div>
-          <div className="ratings">{props.rating}</div>
+      <div className="product-detail-column">
+        <div className="product-detail-head-column">
+          <div className="product-detail-title">{props.title}</div>
+          <div className="product-detail-price-rating-row">
+            <div className="product-price">€{props.price}</div>
+            <div className="product-rating">
+              <ReactStars {...rating} />
+            </div>
+          </div>
         </div>
-
-        <div className="product-description">
+        <div className="product-detail-description">
           <p>{props.description}</p>
         </div>
-
-        <div className="iconbar">
-          <div className="cart icon">
+        <div className="product-detail-icon-row">
+          <div className="add-to-cart">
             <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
           </div>
-          <div className="favorite icon">
+          <div className="add-to-favorite">
             <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
           </div>
-          <div className="zoom icon">
+          <div className="add-to-zoom">
             <FontAwesomeIcon icon={faSearchPlus}></FontAwesomeIcon>
           </div>
         </div>
