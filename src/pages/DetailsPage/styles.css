@@ -89,6 +89,14 @@
   padding-bottom: 3px;
 }
 
+.add-review:active,
+.add-review:hover {
+  border: 1px solid #ff3eb2;
+  background: #ff3eb2;
+
+  color: #ffffff;
+}
+
 .price {
   font-family: "Lato";
   font-style: normal;
@@ -102,10 +110,12 @@
   margin-right: 12px;
   width: 153px;
   height: 32px;
-  border: 1px solid #ff3eb2;
-  background: #ff3eb2;
+  border: 1px solid #1d3178;
+  background-color: white;
+  color: #151875;
+
   border-radius: 8px;
-  background-image: url("./icons/fluent_cart-24-regular.svg");
+  background-image: url("./icons/fluent_cart-24-regular-blue.svg");
   background-repeat: no-repeat;
   background-position: bottom 40% left 10%;
 
@@ -117,8 +127,18 @@
   /* identical to box height, or 181% */
 
   text-transform: capitalize;
-  color: #ffffff;
   padding-left: 3%;
+}
+
+.add-to-cart:active,
+.add-to-cart:hover {
+  border: 1px solid #ff3eb2;
+  background: #ff3eb2;
+
+  color: #ffffff;
+  background-image: url("./icons/fluent_cart-24-regular.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 40% left 10%;
 }
 
 .text-darc-blue {
@@ -151,6 +171,17 @@
   text-transform: capitalize;
   text-align: end;
   padding-right: 2%;
+}
+
+.favorite-btn:active,
+.favorite-btn:hover {
+  border: 1px solid #ff3eb2;
+  background: #ff3eb2;
+
+  color: #ffffff;
+  background-image: url("./icons/heart-white.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 40% left 10%;
 }
 
 .social-links {
