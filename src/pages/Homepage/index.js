@@ -8,7 +8,9 @@ const Homepage = () => {
         <div className="home-motto">
           <h1>Products for every need, at the distance of a click.</h1>
         </div>
-        <div className="home-img"></div>
+        <div className="home-img-container">
+          <div className="home-img"></div>
+        </div>
       </div>
       <Footer />
     </div>
