@@ -1,6 +1,6 @@
 // import "./App.css";
 import { NavBar } from "./components";
-import { Homepage, DetailsPage, ShopPage } from "./pages";
+import { Homepage, DetailsPage, ShopPage,SignupPage } from "./pages";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/details/:id" element={<DetailsPage />} />
+        <Route path="/signup" element={<SignupPage />} />
       </Routes>
     </div>
   );
