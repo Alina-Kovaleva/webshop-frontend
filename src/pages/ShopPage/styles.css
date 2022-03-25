@@ -151,6 +151,12 @@
   text-transform: capitalize;
 }
 
+.btn:disabled {
+  background-color: #eeeaea;
+  color: #7779a5;
+  border: 1px solid #a5a6bb;
+}
+
 .nav-link-to-details-prosuct {
   text-decoration: none;
 }
