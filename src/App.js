@@ -1,6 +1,12 @@
 // import "./App.css";
 import { NavBar } from "./components";
-import { Homepage, DetailsPage, ShopPage,SignupPage } from "./pages";
+import {
+  Homepage,
+  DetailsPage,
+  ShopPage,
+  SignupPage,
+  ProductsPage,
+} from "./pages";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,6 +19,7 @@ function App() {
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/details/:id" element={<DetailsPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="/products" element={<ProductsPage />}></Route>
       </Routes>
     </div>
   );

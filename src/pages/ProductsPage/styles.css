@@ -1,0 +1,8 @@
+.product-page-content-flex {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3%;
+  padding-bottom: 4%;
+
+  /* justify-content: space-around; */
+}
