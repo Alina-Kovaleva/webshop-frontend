@@ -131,8 +131,9 @@
 
 .buttons {
   justify-content: space-around;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  /* padding-top: 2%; */
+  /* padding-bottom: 2%; */
+  /* height: 50%; */
 }
 
 .btn {
@@ -154,9 +155,13 @@
 .btn:disabled {
   background-color: #eeeaea;
   color: #7779a5;
-  border: 1px solid #a5a6bb;
+  border: 1px solid #7779a5;
 }
 
 .nav-link-to-details-prosuct {
   text-decoration: none;
+}
+
+.shop-page-column {
+  flex-wrap: wrap;
 }
