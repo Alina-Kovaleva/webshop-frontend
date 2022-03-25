@@ -23,7 +23,7 @@ export default function DisplayProducts(props) {
     <div className="product-container-row">
       <div className="product-detail-image">
         <NavLink
-          lassName="nav-link-to-details-prosuct"
+          className="nav-link-to-details-prosuct"
           to={`/details/${props.id}`}
         >
           <img className="image" alt={props.title} src={props.mainImage} />
