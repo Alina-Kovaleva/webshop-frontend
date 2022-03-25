@@ -1,7 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import "./styles.css";
 
+
 function NavBar() {
+  
   return (
     <div className="navbar-container">
       <div className="nav-row left">
@@ -56,19 +58,28 @@ function NavBar() {
           </NavLink>
         </div>
         <div>
+          
           <form>
-            <input className="nav-search" type="text" name="search"></input>
+            
+            <input
+              className="nav-search"
+              type="text"
+              name="search"
+              // value={searchTerm}
+              // onChange={(event) => setSearchTerm(event.target.value)}
+            ></input>
           </form>
         </div>
       </div>
       <div className="nav-row right">
-        <div className="login icon"></div>
+       <NavLink to="/signup" className="login icon"></NavLink>
         {/* ^ should seend us to login page */}
         <div className="cart icon"></div>
         {/* ^ shouls seend us to  shoping cart page*/}
         <div className="favorite icon"></div>
         {/* ^ should seend us to favorites page */}
       </div>
+      
     </div>
   );
 }

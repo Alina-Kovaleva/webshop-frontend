@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./styles.css";
+
 import DisplayProducts from "./DisplayProduct";
 import ReactStars from "react-rating-stars-component";
-// import { isDisabled } from "@testing-library/user-event/dist/utils";
+
 import { Footer, Hero } from "../../components";
 
-// const icon= require( "react-icon-rating")
 const ShopPage = () => {
   const [productList, setProductList] = useState([]);
 
@@ -70,7 +70,6 @@ const ShopPage = () => {
     return Math.floor(Math.abs(x - Math.floor(x)) * 90) + 123;
   };
 
-  //
   const getNextProducts = () => {
     setoffset(offset + 5);
   };
@@ -100,6 +99,7 @@ const ShopPage = () => {
           return product.price <= price && product.price >= price - 200;
         });
 
+  // console.log("length", filteredPrice.length);
   return (
     <div>
       <Hero />
@@ -116,6 +116,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setCategory(e.target.value);
+                      } else {
+                        setCategory([]);
                       }
                     }}
                   ></input>
@@ -128,6 +130,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setCategory(e.target.value);
+                      } else {
+                        setCategory([]);
                       }
                     }}
                   ></input>
@@ -140,6 +144,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setCategory(e.target.value);
+                      } else {
+                        setCategory([]);
                       }
                     }}
                   ></input>
@@ -152,6 +158,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setCategory(e.target.value);
+                      } else {
+                        setCategory([]);
                       }
                     }}
                   ></input>
@@ -169,6 +177,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setRates(e.target.value);
+                      } else {
+                        setRates(0);
                       }
                     }}
                   ></input>
@@ -182,6 +192,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setRates(e.target.value);
+                      } else {
+                        setRates(0);
                       }
                     }}
                   ></input>
@@ -195,6 +207,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setRates(e.target.value);
+                      } else {
+                        setRates(0);
                       }
                     }}
                   ></input>{" "}
@@ -208,6 +222,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setRates(e.target.value);
+                      } else {
+                        setRates(0);
                       }
                     }}
                   ></input>
@@ -221,6 +237,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setRates(e.target.value);
+                      } else {
+                        setRates(0);
                       }
                     }}
                   ></input>
@@ -239,6 +257,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setPrices(e.target.value);
+                      } else {
+                        setPrices(0);
                       }
                     }}
                   ></input>
@@ -251,6 +271,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setPrices(e.target.value);
+                      } else {
+                        setPrices(0);
                       }
                     }}
                   ></input>
@@ -263,6 +285,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setPrices(e.target.value);
+                      } else {
+                        setPrices(0);
                       }
                     }}
                   ></input>
@@ -275,6 +299,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setPrices(e.target.value);
+                      } else {
+                        setPrices(0);
                       }
                     }}
                   ></input>
@@ -288,6 +314,8 @@ const ShopPage = () => {
                     onChange={(e) => {
                       if (e.target.checked) {
                         setPrices(e.target.value);
+                      } else {
+                        setPrices(0);
                       }
                     }}
                   ></input>
@@ -330,7 +358,7 @@ const ShopPage = () => {
             <button
               className="btn"
               onClick={getNextProducts}
-              disabled={offset === 15}
+              disabled={offset >= filteredPrice.length - 5}
             >
               Next
             </button>
